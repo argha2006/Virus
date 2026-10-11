@@ -1,0 +1,6 @@
+interface:
+  display_name: "Personalized Job Search"
+  short_description: "Find jobs through resume and target role patterns"
+  default_prompt: "Use $personalized-job-search to search independently from my current resume and the generalized job types, designations, roles and responsibilities in the skill; include relevant opportunities beyond my resume, group India and international roles by employer type, and explain inclusion reasons and qualification gaps."
+policy:
+  allow_implicit_invocation: true
