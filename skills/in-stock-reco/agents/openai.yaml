@@ -1,0 +1,6 @@
+interface:
+  display_name: "IN Stock Reco"
+  short_description: "Screen Indian stocks and verify financial quality"
+  default_prompt: "Use $in-stock-reco to research up to 20 Indian stocks meeting my screening rules and provide a consolidated report."
+policy:
+  allow_implicit_invocation: true
