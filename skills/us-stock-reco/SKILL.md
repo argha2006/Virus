@@ -30,6 +30,41 @@ Target up to 20 verified qualifying stocks. Never relax thresholds, silently cha
 6. Check institutional ownership using dated, documented coverage. Reconcile materially conflicting or anomalous percentages. Also obtain the number of distinct institutional holders with a reported position in each stock for the latest available reporting period. Deduplicate institutional entities within the source coverage; do not add counts across reporting periods. Record the source, reporting date, and whether the count represents reporting managers or another defined institutional entity. Keep this count separate from institutional ownership percentage and from ETF or mutual-fund counts. Obtain separate counts of ETFs and mutual funds holding each stock where reliable data are accessible. Record the provider, coverage, and holdings date. Do not equate institutional holder counts with fund counts, sum overlapping categories, or report missing data as zero.
 7. Assess business model, industry position, growth durability, cash generation, leverage, earnings quality, competitive risks, and valuation relative to relevant peers. Explain when sector accounting makes a ratio less comparable. Price trends may provide entry context, but do not override failed fundamental filters.
 
+## Second-stage valuation and downside assessment
+
+Run this stage for every stock that passes all four mandatory screening rules. These valuation measures are output and analysis parameters, not additional hard screening filters unless the user explicitly supplies thresholds.
+
+### Valuation parameters
+
+- **Discounted cash flow (DCF):** Estimate intrinsic value using normalized FCFF or FCFE, as appropriate. State forecast horizon, revenue growth, operating margin, tax, reinvestment/capital expenditure, discount rate (WACC for FCFF; cost of equity for FCFE), terminal growth, and terminal value method. Provide base, bull, and bear scenarios. Ensure terminal growth is below the discount rate and explain if terminal value dominates.
+- **DCF value and implied return:** Show intrinsic value per diluted share for each scenario, reference share price and date, and implied upside/downside = (intrinsic value / reference share price - 1) x 100%. Reconcile enterprise value to equity value for FCFF, including debt, cash, minority interests and diluted shares where relevant.
+- **PEG ratio:** Report P/E divided by the stated annual EPS growth rate. Identify trailing or forward P/E, historical or forecast EPS growth, forecast horizon, and source. Mark not meaningful for negative, near-zero, volatile, or unavailable EPS growth; do not fabricate consensus.
+- **Free cash flow yield:** Define FCF, normally operating cash flow less capital expenditure, and report FCF, its fiscal/trailing period, market capitalization and date, and FCF yield = FCF / market capitalization x 100%. Explain material working-capital or one-off effects. Mark N/A where conventional FCF is not meaningful.
+- **Margin of safety:** Report (base-case intrinsic value per share / reference share price - 1) x 100%, alongside reference price/date and assumptions. Include bear-case downside. Do not impose an arbitrary pass threshold unless the user specifies one.
+- **Historical and peer valuation:** Compare current trailing/forward P/E, EV/EBITDA and FCF yield where meaningful with the company's historical ranges and relevant peers. State periods, peer selection, dates and sources; explain structural changes that impair comparability.
+
+### Valuation controls and risks
+
+1. Use consistent price dates, diluted share counts, currencies and financial periods. Reconcile splits, dilution, buybacks, debt, cash, leases, minority interests and material non-operating assets.
+2. Normalize cyclical earnings and cash flows; use mid-cycle assumptions where appropriate. For high-growth companies, model reinvestment needs and plausible margin paths.
+3. Provide sensitivity analysis for discount rate/WACC and terminal growth (or key FCFE drivers). Show assumptions and identify main valuation sensitivities.
+4. Cross-check DCF against peer and historical multiples and business fundamentals. Explain material discrepancies; do not select only the most favorable valuation method.
+5. Separate reported facts, vendor/analyst estimates and model assumptions. Cite primary filings and dated market data. Mark unavailable inputs explicitly and explain limitations.
+6. Assess debt, cash generation, earnings quality, dilution, cyclicality, customer concentration, competitive position, regulatory exposure and execution risks. A low PEG, high FCF yield or positive DCF upside is not by itself a buy signal.
+
+### Required valuation output
+
+For every qualifying stock, include these fields in the consolidated results or a linked valuation table:
+
+- DCF intrinsic value per share: base, bull and bear cases.
+- Reference share price and date; implied base-case upside/downside and bear-case downside.
+- Key DCF assumptions: forecast horizon, WACC/cost of equity, terminal growth and sensitivity range.
+- PEG ratio, P/E basis, EPS growth rate/type, forecast period and source (or N/A with reason).
+- Free cash flow, FCF period, market capitalization/date and FCF yield.
+- Margin of safety, formula and reference price/date.
+- Historical and peer valuation comparison with periods and sources.
+- Valuation conclusion: potentially undervalued, approximately fairly valued, potentially overvalued, or insufficient evidence, with rationale and risks.
+
 ## Consolidated report
 
 Open with the applied rules, dates, universe, ranking method, and number of verified passes. Use a transparent ranking supported by evidence; do not present a screener order as a prediction of investment returns.
