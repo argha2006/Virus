@@ -45,3 +45,49 @@ Provide one comparison table containing all requested parameters:
 - Verification status and sources supporting the row.
 
 Add concise reasons for inclusion and material risks for each stock, plus the annual revenue appendix. State that the result is a research shortlist, with no guaranteed returns or implied suitability for the user's portfolio. Distinguish verified passes from near misses and unresolved candidates; keep the latter outside the qualifying list. Always include the mutual-fund count column; show N/A with the reason when no reliable count is available. Missing holder counts need not disqualify a stock, but missing mandatory filter evidence does. Describe coverage limits without claiming an exhaustive market-wide top 20 unless the research supports that claim. Follow the requested output format; use relevant artifact skills when creating files.
+
+## Advanced valuation and investment decision framework
+
+Run this stage for every qualifying stock and include its results in the report output. Valuation is a second-stage assessment, not an extra fundamental screening gate: do not silently remove an otherwise qualifying company merely because a method is unsuitable or data are unavailable. Clearly distinguish calculated values, sourced vendor values, estimates, and unavailable items. Never fabricate inputs or present illustrative assumptions as company facts.
+
+### Method selection and applicability
+
+Select valuation methods based on the business model, sector, cash-flow characteristics, and data quality. Mark each parameter in the output as **Calculated**, **Conditional**, or **N/A**, with a brief reason where conditional or unavailable.
+
+1. **Intrinsic value per share — required.** Estimate intrinsic value using at least one defensible, sector-appropriate method. Where possible, triangulate with a second independent method. Show the method, valuation date, key assumptions, equity/share-count bridge, and value per share. If no reliable estimate can be made, state that explicitly rather than inventing a value.
+2. **DCF — conditional by suitability.** Use FCFF discounted at WACC for non-financial operating businesses when cash flows can be reasonably forecast. FCFE or dividend discount models may be more suitable in selected cases. Do not force a conventional FCFF/WACC model onto banks, insurers, or other financial institutions; use sector-appropriate approaches such as excess-return/residual-income, dividend discount, or justified P/B–ROE frameworks. For cyclical businesses, normalize margins, earnings, and cash flows across the cycle. Explain why DCF is unsuitable when omitted.
+3. **Bull, base, and bear scenarios — required.** Provide three valuation cases with explicit operating and valuation assumptions, estimated value per share, and upside/downside versus the current market price. Avoid false precision; explain major scenario drivers.
+4. **PEG — conditional.** Calculate P/E divided by the expected annual EPS growth rate expressed as a percentage (for example, 20 / 15 = 1.33). State the growth horizon and source. Use only when earnings and growth are positive, meaningful, and reasonably sustainable. Mark N/A for losses, volatile/rebounding earnings, or unreliable growth estimates. Treat PEG thresholds as heuristics, not buy/sell rules.
+5. **Free cash flow yield — conditional.** For non-financial companies, calculate a clearly defined FCF yield, preferably unlevered FCFF / enterprise value or levered FCFE / market capitalization; state which definition is used and keep numerator/denominator consistent. Explain treatment of leases, exceptional capex, and working-capital swings where material. Do not apply conventional FCF yield mechanically to banks/insurers; use relevant sector measures instead.
+6. **Margin of safety — required when a credible intrinsic value is available.** Calculate (intrinsic value per share − current share price) / intrinsic value per share × 100. Show negative values when price exceeds estimated value. Identify which intrinsic-value estimate is used and disclose uncertainty. Do not imply that a positive margin guarantees safety.
+7. **Historical valuation comparison — required where meaningful.** Compare current P/E (or the sector-appropriate multiple) with the company's own historical range, preferably across a representative cycle and using consistent earnings definitions. Include the lookback period and source. Explain structural changes and exclude distorted periods where justified. For cyclical companies, use normalized earnings rather than relying on peak/trough P/E.
+8. **Peer valuation comparison — required where meaningful.** Compare with a relevant peer set using consistent dates, financial periods, accounting bases, and multiples. Include at least P/E where meaningful and sector-specific multiples such as P/B, EV/EBITDA, EV/sales, or price-to-book as appropriate. Explain peer selection and material differences in growth, leverage, profitability, and business mix. Do not call a stock cheap solely because its multiple is below peers.
+9. **Sensitivity analysis — conditional on model use.** For DCF or other assumption-driven intrinsic valuation, show how value changes under reasonable changes to the key drivers. For DCF, at minimum provide a WACC/terminal-growth sensitivity table when those inputs are used. For non-DCF methods, test the assumptions that materially drive value. If unavailable, explain why.
+10. **WACC — conditional on valuation method.** Calculate and disclose WACC only when using an FCFF DCF or another method that requires it. Show cost of equity, cost of debt, tax rate, capital weights, risk-free rate, equity risk premium, and beta/source where data permit. Use India-appropriate, dated market inputs (including an appropriate Indian government-security yield) and disclose assumptions. Do not use WACC as the discount rate for FCFE, banks, or insurers by default; use the discount rate appropriate to the selected method.
+
+### Sector-specific valuation guidance
+
+- **Banks and lenders:** Prefer P/B with sustainable ROE, residual-income/excess-return, or dividend approaches; assess asset quality, capital adequacy, and credit costs. Avoid conventional FCFF and generic FCF yield.
+- **NBFCs:** Use P/B, sustainable ROE/ROA, residual-income, and asset-quality/credit-cost analysis as appropriate. Explain differences between lending models.
+- **Insurance:** Consider embedded value, value of new business (VNB), relevant multiples, and dividend/residual-income methods where data support them; do not force industrial-company DCF metrics.
+- **Manufacturing, IT, FMCG, pharma, and other operating companies:** Use FCFF DCF/WACC when cash flows are forecastable, supported by peer and historical multiples, FCF yield, PEG when meaningful, and scenario/sensitivity analysis.
+- **Cyclical sectors (for example metals, commodities, autos, and cement):** Normalize earnings, margins, capex, and working capital over a cycle; use mid-cycle multiples and scenario analysis. Avoid interpreting peak or trough P/E in isolation.
+- **Holding companies, REITs/InvITs, and other special structures:** Use NAV, sum-of-the-parts, AFFO/distribution or other structure-appropriate methods; explain any discount/premium and avoid unsuitable generic ratios.
+
+### Required valuation output for every qualifying stock
+
+Add a dedicated **Advanced Valuation** section and include, in the main comparison table or a linked per-company valuation table, at least:
+
+- Current share price and price date; valuation date and currency (INR).
+- Selected valuation method(s), intrinsic value per share, and method applicability/status.
+- Bear/base/bull value per share and implied upside/downside for each case.
+- Margin of safety (or negative margin where applicable).
+- PEG and its EPS-growth horizon/source, or N/A with reason.
+- FCF yield, its exact definition, or N/A with reason.
+- Current versus historical valuation multiple and lookback period.
+- Peer-group valuation comparison and peer set.
+- WACC and key assumptions when applicable.
+- Sensitivity analysis results when applicable.
+- Key assumptions, data gaps, valuation confidence (High/Medium/Low with rationale), and principal risks.
+
+Use dated, India-relevant inputs and cite primary filings/company reports and reliable market-data sources. State whether figures are consolidated or standalone and keep periods/bases consistent. Do not use fixed valuation weights universally; if combining methods, justify the weights by sector and disclose the calculation. The output must always show every listed parameter, even when marked conditional or N/A, so users can see what was assessed and why. Conclude with a valuation assessment (attractive / fairly valued / expensive / insufficient evidence), separate from the fundamental-screen pass, and do not present it as personalized financial advice or a guaranteed return.
