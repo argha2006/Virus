@@ -95,3 +95,35 @@ Use dated, India-relevant inputs and cite primary filings/company reports and re
 ### Preserve the original report parameters
 
 The Advanced Valuation section supplements the original screening and company-analysis output; it never replaces it. Every triggered report must retain all original columns and supporting analysis: rank; company name; NSE/BSE symbol; industry/business description; market capitalization in INR crore; stock segment; trailing ROE; trailing P/E; five-year revenue CAGR and its period; net profit margin; diluted trailing EPS in INR; promoter and promoter-group holding; promoter pledge/encumbrance and ownership-change notes; institutional ownership where available; ETF holder count; mutual-fund scheme count; verification status; sources; reasons for inclusion; material risks; and the six annual revenue observations covering five fiscal-year intervals. Keep the original fundamental screening rules and ownership checks visible. Add the Advanced Valuation outputs as additional columns or a clearly linked per-company section. Do not omit an original parameter merely because the new valuation section is present or because a value is unavailable; show N/A and explain the limitation. The final report must therefore contain both the complete original fundamental/ownership output and all ten valuation parameters for every qualifying stock.
+
+
+## FII shareholding movement — required ownership parameters
+
+For every stock in the report (qualifying stocks, near misses, and watchlist candidates), report the latest available Foreign Institutional Investor (FII/FPI) shareholding and both movement measures below. Use the exchange filing's exact holder-category label and explain terminology differences.
+
+1. **Latest FII/FPI holding:** percentage of total shares held in the latest reported quarter, with quarter-end date.
+2. **FII change — last quarter (percentage points):** latest quarter holding minus the immediately preceding quarter's holding.
+3. **FII change — last four quarters (percentage points):** latest quarter holding minus the holding in the same quarter one year earlier (four reporting quarters prior). This is a percentage-point change, not relative percentage growth.
+
+### Data and calculation rules
+
+- Use the latest available quarterly shareholding pattern filed with NSE/BSE as the primary source. Prefer exchange or issuer filings; use reputable providers for discovery and cross-checking. Record reporting dates and source links.
+- Calculate from unrounded reported holdings where available. Display holdings to two decimal places and changes with an explicit sign and two decimal places. Label both change columns **pp**.
+- Compare with the immediately preceding reported quarter and the same quarter four quarters earlier. Use filings actually available on the research date; do not assume all quarters have been filed.
+- If the company was listed less than four quarters ago, or a comparable filing is unavailable, show **N/A** for the four-quarter change and explain why. Never estimate missing history.
+- If corporate actions, mergers, demergers, acquisitions, holder reclassification, share-capital changes, or category changes make periods incomparable, flag the discontinuity and mark the change **Unverified** until reconciled.
+- Distinguish FII/FPI from DII, mutual funds, insurance companies, and total institutional ownership. Do not infer net buying or selling solely from a change in ownership percentage; denominator changes and reclassification can affect it.
+- Interpret each trend as increased, decreased, stable, or unverified, but never use FII movement as a standalone buy/sell signal or as a substitute for promoter ownership or fundamental filters.
+- If a quarter cannot be verified, show **N/A — not verified**, identify the missing period, and do not fabricate a value.
+
+### Required report columns
+
+Add these columns for every reported stock, including near misses and watchlist candidates:
+- Latest FII/FPI holding (%) and quarter-end date.
+- Previous-quarter FII/FPI holding (%) and quarter-end date.
+- **FII change — last quarter (pp)**.
+- FII/FPI holding in the comparable quarter four quarters earlier (%) and quarter-end date.
+- **FII change — last four quarters (pp)**.
+- Trend interpretation and any corporate-action/data-quality caveat.
+
+Keep these in addition to promoter holding, promoter pledge/encumbrance, institutional ownership, ETF holder count, and mutual-fund scheme count. FII data is supplementary ownership context and never replaces promoter ownership or a mandatory screening criterion.
